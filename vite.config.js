@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-export default {
-  base: '/myntra-clone/',
-}
+export default defineConfig({
+  plugins: [react()],
+  base: '/myntra-clone/',  // 👈 your repo name
+})
