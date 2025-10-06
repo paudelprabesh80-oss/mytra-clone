@@ -1,7 +1,7 @@
 // app.js
 const express = require('express');
 const bodyParser = require('body-parser');
-const { getStoredItems, storeItems } = require('./data/items'); // Make sure this file exists
+const { getStoredItems, storeItems } = require('./data/items'); // make sure this file exists
 
 const app = express();
 
@@ -60,7 +60,7 @@ app.post('/items', async (req, res) => {
   }
 });
 
-// Listen on dynamic port for cloud deployment
+// Listen on dynamic port for Railway deployment
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
